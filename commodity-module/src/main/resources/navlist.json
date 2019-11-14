@@ -1,0 +1,132 @@
+[
+  {
+    "path": "/home",
+    "name": "首页"
+  },
+  {
+    "name": "用户管理",
+    "child": [
+      {
+        "name": "用户列表",
+        "path": "/components"
+      },
+      {
+        "name": "用户权限",
+        "path": "/components/permission"
+      }
+    ]
+  },
+  {
+    "name": "主机管理",
+    "child": [
+      {
+        path: '/components/permission',
+        name: '主机列表',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageTable',
+        name: 'shell控制窗口'
+      },
+      {
+        path: '/components/pageTitle',
+        name: '主机状态'
+      }
+    ]
+  },
+  {
+    name: '配置管理',
+    child:[
+      {
+        path: '/components/pageSection',
+        name: '环境配置',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageSearch',
+        name: '服务配置',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageToolbar',
+        name: '应用配置',
+        permission: ['edit']
+      }
+    ]
+  },
+  {
+    name: '设备管理',
+    child:[
+      {
+        path: '/components/pageSection',
+        name: '设备分布地图',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageSearch',
+        name: '设备配置',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageToolbar',
+        name: '设备列表',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageToolbar',
+        name: '设备预警',
+        permission: ['edit']
+      }
+    ]
+  },
+  {
+    name: '监控管理',
+    child:[
+      {
+        path: '/theme',
+        name: '主机监控',
+        permission: ['edit']
+      },
+      {
+        path: '/components/pageNotes',
+        name: '服务监控',
+        permission: ['edit']
+      },
+      {
+        path: '/example/table',
+        name: '应用监控',
+        permission: ['edit']
+      }
+    ]
+  },
+  {
+    name: '预警管理',
+    child:[
+      {
+        path: '/theme',
+        name: '预警规则',
+        permission: ['edit']
+      },
+      {
+        path: '/example/table',
+        name: '预警通知',
+        permission: ['edit']
+      }
+    ]
+  },
+  {
+    name: '系统管理',
+    child:[
+      {
+        path: '/theme',
+        name: '通知设置',
+        permission: ['edit']
+      },
+      {
+        path: '/example/table',
+        name: '系统重置',
+        permission: ['edit']
+      }
+    ]
+  }
+]

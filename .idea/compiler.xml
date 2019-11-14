@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="alipay-module" />
+        <module name="eureka-server" />
+        <module name="member-module" />
+        <module name="oauth-security" />
+        <module name="springcloudtest" />
+        <module name="eureka-integral-module" />
+        <module name="commodity-module" />
+        <module name="eureka-ribbon" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alipay-module" target="1.8" />
+      <module name="alipay-small" target="1.8" />
+      <module name="commodity-module" target="1.8" />
+      <module name="eureka-integral-module" target="1.8" />
+      <module name="eureka-ribbon" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="integral-module" target="1.8" />
+      <module name="member-module" target="1.8" />
+      <module name="oauth-security" target="1.8" />
+      <module name="springcloudtest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="alipay-small" options="" />
+      <module name="commodity-module" options="-parameters" />
+      <module name="eureka-integral-module" options="-parameters" />
+      <module name="eureka-ribbon" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="integral-module" options="-parameters" />
+      <module name="member-module" options="-parameters" />
+      <module name="oauth-security" options="-parameters" />
+      <module name="springcloudtest" options="-parameters" />
+    </option>
+  </component>
+</project>

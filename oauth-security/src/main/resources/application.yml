@@ -1,0 +1,51 @@
+eureka:
+  instance:
+    hostname: localhost
+    #    心跳时间
+    lease-expiration-duration-in-seconds: 20
+    #     发呆时间
+    lease-renewal-interval-in-seconds: 30
+    #    状态路径
+    status-page-url: https://${eureka.instance.hostname}:${server.port}/info
+    #    健康
+    health-check-url-path: https://${eureka.instance.hostname}:${server.port}/health
+    home-page-url: https://${eureka.instance.hostname}:${server.port}/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8088/eureka/
+    registry-fetch-interval-seconds: 10
+# 配置前端负载均衡转发
+# /member/** 表示对于api网关的所有请求  均会转发到注册中心的member实例服务ID上
+zuul:
+  routes:
+    oauth2-center:
+      path: /member/**
+      serviceId: member
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2SESSION
+spring:
+  application:
+    name: oauth2-center
+  datasource:
+      username: root
+      password: MyNewPass4!
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://localhost:3306/life_admin?charset=utf8mb4&useSSL=false
+      driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+      database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+      show-sql: true
+      hibernate:
+        ddl-auto: update
+      open-in-view: true
+logging:
+  config: classpath:logback-spring.xml

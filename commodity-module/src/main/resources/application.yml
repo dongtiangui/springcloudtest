@@ -1,0 +1,75 @@
+server:
+  port: 8083
+  use-forward-headers: true
+  tomcat:
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+  servlet:
+    session:
+      cookie:
+        name: SSIONMEMBER
+#  ssl.key-store: classpath:tomcat.keystore
+#  ssl.key-alias: tomcat
+#  ssl.enabled: true
+#  ssl.key-store-password: 123456
+#  ssl.key-store-type: JKS
+eureka:
+  instance:
+    hostname: localhost
+#    心跳时间
+    lease-expiration-duration-in-seconds: 20
+#     发呆时间
+    lease-renewal-interval-in-seconds: 30
+#    状态路径
+    status-page-url: https://${eureka.instance.hostname}:${server.port}/info
+#    健康
+    health-check-url-path: https://${eureka.instance.hostname}:${server.port}/health
+    home-page-url: https://${eureka.instance.hostname}:${server.port}/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8088/eureka/
+    registry-fetch-interval-seconds: 10
+#    开启健康检查
+    healthcheck:
+      enabled: true
+
+spring:
+  thymeleaf:
+    cache: false
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: commodity
+  datasource:
+    username: root
+    password: MyNewPass4!
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/life_commodity?charset=utf8mb4&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+#security:
+#  oauth2:
+#    client:
+#      client-id: product
+#      client-secret: 456
+#      access-token-uri: http://localhost:8080/oauth/token
+#      user-authorization-uri: http://localhost:8080/oauth/authorize
+##      配置
+#      use-current-uri: false
+#      registered-redirect-uri: http://localhost:8083/index
+#      grant-type: authorization_code
+#      pre-established-redirect-uri: http://localhost:8083/index
+#    resource:
+#      user-info-uri: http://localhost:8080/user/me
+
+http:
+  maxTotal: 300
+  defaultMaxPerRoute: 50
+  connectTimeout: 1000
+  connectionRequestTimeout: 500
+  socketTimeout: 5000

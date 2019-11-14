@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>Demo</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/css/fontawesome.min.css">
+</head>
+<body>
+    <button id="btn">获取token</button>
+
+    <input id="code" hidden th:value="${code}">
+
+    <div id="div-content">
+
+    </div>
+
+    <a href="/me" id="me">me
+    </a>
+
+    <a href="/user/admin">具有admin权限</a>
+
+    <a href="/user/user">没有admin权限</a>
+
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $('#btn').click(function () {
+            $(function () {
+               $.post({
+                   url:'http://localhost:8080/oauth/token',
+                   data:{
+                       grant_type:'authorization_code',
+                       client_id:'admin',
+                       client_secret:'123',
+                       redirect_uri: 'http://localhost:8080/index',
+                       code:$('#code').val()
+                   },
+                   success:function (data) {
+                       $('#div-content').html(data.access_token);
+                       $('#me').attr('href','http://localhost:8080/me?access_token='+data.access_token);
+                       console.log(data)
+                   }
+               })
+            })
+        })
+    </script>
+</body>
+</html>

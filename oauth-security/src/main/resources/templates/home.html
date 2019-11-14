@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Demo</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/css/fontawesome.css">
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <span>welcome:</span><p th:text="${username}"></p>
+    <a th:href="@{/logout}">退出</a>
+    <a href="http://localhost:8080/oauth/authorize?response_type=code&client_id=admin&redirect_uri=http://localhost:8080/index&scope=read">code</a>
+    <a href="/api/1">api</a>
+    <script type="application/javascript">
+        let client = null;
+        function connetion() {
+            let socketJs = new SockJS("/queueServer");
+            client = Stomp.over(socketJs);
+            client.connect({}, function(frame) {
+                console.log('Connected: ' + frame);
+                client.subscribe('/topic/getResponse', function(response){
+                    alert("同一账号不能同时多地点在线你在另外的登录地已经退出！会话:"+response.body)
+                });
+            });
+        }
+        function disconnect() {
+            if (client !== null) {
+                client.disconnect();
+            }
+            console.log("Disconnected");
+        }
+        $(function () {
+            connetion();
+            window.onbeforeunload = function () {
+                disconnect();
+            }
+        })
+    </script>
+</body>
+</html>

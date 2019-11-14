@@ -1,0 +1,77 @@
+eureka:
+  instance:
+    hostname: localhost
+    #    心跳时间
+    lease-expiration-duration-in-seconds: 20
+    #     发呆时间
+    lease-renewal-interval-in-seconds: 30
+    #    状态路径
+    status-page-url: https://${eureka.instance.hostname}:${server.port}/info
+    #    健康
+    health-check-url-path: https://${eureka.instance.hostname}:${server.port}/health
+    home-page-url: https://${eureka.instance.hostname}:${server.port}/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8088/eureka/
+    registry-fetch-interval-seconds: 10
+    #    开启健康检查
+#    healthcheck:
+#      enabled: true
+security:
+  oauth2:
+    client:
+      client-id: integral
+      client-secret: 789
+      access-token-uri: http://localhost:8080/oauth/token
+      user-authorization-uri: http://localhost:8080/oauth/authorize
+      registered-redirect-uri: http://localhost:8082/info
+      pre-established-redirect-uri: http://localhost:8082/info
+      use-current-uri: false
+    resource:
+      user-info-uri: http://localhost:8080/user/me
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    username: root
+    password: MyNewPass4!
+#    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://localhost:3306/life_integral?charset=utf8mb4&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+  activemq:
+      broker-url: tcp://localhost:61616
+      user: admin
+      password: admin
+      pool:
+        max-connections: 100
+        max-sessions-per-connection: 10
+        enabled: true
+      in-memory: false
+      packages:
+        trust-all: true
+#        指定为发布订阅模式
+  jms:
+    pub-sub-domain: true
+
+  application:
+    name: integral
+  data:
+    mongodb:
+      uri: mongodb://root:520131@localhost:27017/life
+      authentication-database: admin
+server:
+  port: 8082
+  tomcat:
+    max-threads: 300
+    max-http-post-size: 50
+  servlet:
+    session:
+      cookie:
+        name: UISESSIONCOUPON

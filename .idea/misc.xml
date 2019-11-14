@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/oauth-security/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-commodity-module/pom.xml" />
+        <option value="$PROJECT_DIR$/member-module/pom.xml" />
+        <option value="$PROJECT_DIR$/commodity-module/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-ribbon/pom.xml" />
+        <option value="$PROJECT_DIR$/integral/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-integral-module/pom.xml" />
+        <option value="$PROJECT_DIR$/alipay-module/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="com.a.a.a.g.d.f">
+    <domainId>
+      <pair>
+        <class>com.member.bootstrap.model.MemberModel</class>
+        <id>memberName</id>
+      </pair>
+    </domainId>
+    <mapperDomain>
+      <pair>
+        <mapper>com.member.bootstrap.mapper.MemberInterface</mapper>
+        <method>findOneMemberModel</method>
+        <domain>com.member.bootstrap.model.MemberModel</domain>
+      </pair>
+    </mapperDomain>
+    <backquoteDomain />
+  </component>
+</project>

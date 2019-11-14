@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.1.5.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.dong.springcloud</groupId>
+	<artifactId>springcloudtest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springcloudtest</name>
+	<description>springcloud测试 project for Spring Boot</description>
+	
+	<properties>
+		<java.version>1.8</java.version>
+		<fastjson>1.2.31</fastjson>
+		<httpcomponents>4.5.8</httpcomponents>
+		<logback>1.2.3</logback>
+		<jackson.version>2.9.8</jackson.version>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>alipay-module</module>
+		<module>oauth-security</module>
+		<module>eureka-integral-module</module>
+		<module>eureka-ribbon</module>
+		<module>eureka-server</module>
+		<module>member-module</module>
+		<module>commodity-module</module>
+	</modules>
+</project>

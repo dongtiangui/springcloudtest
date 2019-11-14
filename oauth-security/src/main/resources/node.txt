@@ -1,0 +1,15 @@
+首先 创建返回值token对象
+    创建请求对象的并实现UserDetails 接口
+    重写里面的方法
+
+然后在创建 两个filter
+        JWTLoginFilter 继承 UsernamePasswordAuthenticationFilter
+        重写里面的attemptAuthentication和successfulAuthentication方法
+
+        JWTAuthenticationFilter
+
+开启资源服务 继承ResourceServerConfigurerAdapter
+
+springboot 打包war 配置ioc容器继承SpringBootServletInitializer 重写configure
+
+    build.source(SpringBoot.class)

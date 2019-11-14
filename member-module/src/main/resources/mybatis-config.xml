@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!--	springboot 数据源在全局配置文件去配置-->
+<!--	<environments default="dev">-->
+<!--		<environment id="dev">-->
+<!--			<transactionManager type="JDBC"/>-->
+<!--&lt;!&ndash;			数据源数据库连接池&ndash;&gt;-->
+<!--			<dataSource type="POOLED">-->
+<!--				<property name="" value=""/>-->
+<!--				<property name="" value=""/>-->
+<!--				<property name="" value=""/>-->
+<!--				<property name="" value=""/>-->
+<!--			</dataSource>-->
+<!--		</environment>-->
+<!--	</environments>-->
+
+<!--	settings配置详情  http://www.mybatis.org/mybatis-3/zh/index.html-->
+	<settings>
+		<setting name="cacheEnabled" value="true"/>
+		<!--		延迟加载-->
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="multipleResultSetsEnabled" value="true"/>
+		<setting name="useColumnLabel" value="true"/>
+		<setting name="useGeneratedKeys" value="false"/>
+		<setting name="autoMappingBehavior" value="PARTIAL"/>
+		<setting name="autoMappingUnknownColumnBehavior" value="WARNING"/>
+		<setting name="defaultExecutorType" value="SIMPLE"/>
+		<setting name="defaultStatementTimeout" value="25"/>
+		<setting name="defaultFetchSize" value="100"/>
+		<setting name="safeRowBoundsEnabled" value="false"/>
+		<!--		开启驼峰命名-->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<setting name="localCacheScope" value="SESSION"/>
+		<setting name="jdbcTypeForNull" value="OTHER"/>
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString"/>
+	</settings>
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor"/>
+	</plugins>
+</configuration>
