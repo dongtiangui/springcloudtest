@@ -16,7 +16,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.DefaultResponseErrorHandler;
 import org.springframework.web.client.RestTemplate;
-
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -44,13 +43,13 @@ public class CommodityModuleApplication {
     @CrossOrigin
     @ResponseBody
     @RequestMapping("/login")
-    public LoginResult user(@RequestBody Map map) {
-        System.out.println(map.get("name") + " , " + map.get("password"));
+    public LoginResult user() {
+//        System.out.println(map.get("name") + " , " + map.get("password"));
         LoginResult resultUtil = new LoginResult();
         resultUtil.setCaptcha("image('100x40', '#FFFFFF', '@word')");
         resultUtil.setMessage("成功");
         resultUtil.setLogin(true);
-        resultUtil.setName(map.get("name").toString());
+//        resultUtil.setName(map.get("name").toString());
         resultUtil.setToken("guid");
         resultUtil.setUid(UUID.randomUUID().toString());
         return resultUtil;

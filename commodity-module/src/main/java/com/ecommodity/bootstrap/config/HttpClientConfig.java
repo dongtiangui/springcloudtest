@@ -3,7 +3,6 @@ package com.ecommodity.bootstrap.config;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.conn.HttpClientConnectionManager;
-import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -118,7 +117,6 @@ public class HttpClientConfig {
     public void setConnectionRequestTimeout(Integer connectionRequestTimeout) {
         this.connectionRequestTimeout = connectionRequestTimeout;
     }
-
     public Integer getSocketTimeout() {
         return socketTimeout;
     }

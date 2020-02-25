@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/git/AdminLTE/AdminLTE.iml" filepath="$USER_HOME$/git/AdminLTE/AdminLTE.iml" />
-      <module fileurl="file://$PROJECT_DIR$/alipay-module/alipay-module.iml" filepath="$PROJECT_DIR$/alipay-module/alipay-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/application-admin/application-admin.iml" filepath="$PROJECT_DIR$/application-admin/application-admin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/application-merchant-admin/application-merchant-admin.iml" filepath="$PROJECT_DIR$/application-merchant-admin/application-merchant-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/commodity-module/commodity-module.iml" filepath="$PROJECT_DIR$/commodity-module/commodity-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/concurrency-go/concurrency-go.iml" filepath="$PROJECT_DIR$/concurrency-go/concurrency-go.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-integral-module/eureka-integral-module.iml" filepath="$PROJECT_DIR$/eureka-integral-module/eureka-integral-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-ribbon/eureka-ribbon.iml" filepath="$PROJECT_DIR$/eureka-ribbon/eureka-ribbon.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/face-recognition-python/face-recognition-python.iml" filepath="$PROJECT_DIR$/face-recognition-python/face-recognition-python.iml" />
-      <module fileurl="file://$PROJECT_DIR$/getwall-module/getwall-module.iml" filepath="$PROJECT_DIR$/getwall-module/getwall-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/getway-security-module/getway-security-module.iml" filepath="$PROJECT_DIR$/getway-security-module/getway-security-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hik-consul/hik-consul.iml" filepath="$PROJECT_DIR$/hik-consul/hik-consul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/log-module/log-module.iml" filepath="$PROJECT_DIR$/log-module/log-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/member-module/member-module.iml" filepath="$PROJECT_DIR$/member-module/member-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/oauth-security/oauth-security.iml" filepath="$PROJECT_DIR$/oauth-security/oauth-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ribbon-module/ribbon-module.iml" filepath="$PROJECT_DIR$/ribbon-module/ribbon-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudtest.iml" filepath="$PROJECT_DIR$/springcloudtest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/static-webserver/static-webserver.iml" filepath="$PROJECT_DIR$/static-webserver/static-webserver.iml" />
-      <module fileurl="file://$USER_HOME$/git/vue-backend/vue-backend.iml" filepath="$USER_HOME$/git/vue-backend/vue-backend.iml" />
     </modules>
   </component>
 </project>

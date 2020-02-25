@@ -89,9 +89,7 @@ public class ShrioConfiguration {
     @Bean
     public ShiroFilterFactoryBean shiroFilterFactoryBean(SecurityManager securityManager){
         ShiroFilterFactoryBean filterFactoryBean = new ShiroFilterFactoryBean();
-        LinkedHashMap<String,String> linkedHashMap = new LinkedHashMap<String,String>();
-        linkedHashMap.put("","");
-        filterFactoryBean.setFilterChainDefinitionMap(linkedHashMap);
+
         filterFactoryBean.setSecurityManager(securityManager);
         filterFactoryBean.setLoginUrl("/");
         filterFactoryBean.setSuccessUrl("");

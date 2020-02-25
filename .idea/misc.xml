@@ -8,14 +8,14 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/oauth-security/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-commodity-module/pom.xml" />
         <option value="$PROJECT_DIR$/member-module/pom.xml" />
         <option value="$PROJECT_DIR$/commodity-module/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-ribbon/pom.xml" />
         <option value="$PROJECT_DIR$/integral/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-integral-module/pom.xml" />
-        <option value="$PROJECT_DIR$/alipay-module/pom.xml" />
+        <option value="$PROJECT_DIR$/hik-consul/pom.xml" />
+        <option value="$PROJECT_DIR$/log-module/pom.xml" />
       </list>
     </option>
   </component>

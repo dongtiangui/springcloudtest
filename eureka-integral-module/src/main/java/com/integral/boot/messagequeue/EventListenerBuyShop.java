@@ -15,7 +15,7 @@ public class EventListenerBuyShop implements ApplicationListener<BuyShop> {
 
     @Override
     public void onApplicationEvent(BuyShop buyShop) {
-        Destination destination = new ActiveMQTopic("customer-buy-shop");
+        Destination destination = new ActiveMQTopic("hik_active");
         alarmProducer.sendMessage(destination,buyShop.toString());
     }
 }

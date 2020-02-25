@@ -47,11 +47,11 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>alipay-module</module>
+		<module>hik-consul</module>
 		<module>oauth-security</module>
 		<module>eureka-integral-module</module>
-		<module>eureka-ribbon</module>
-		<module>eureka-server</module>
+		<module>ribbon-module</module>
+		<module>log-module</module>
 		<module>member-module</module>
 		<module>commodity-module</module>
 	</modules>

@@ -7,14 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="alipay-module" />
-        <module name="eureka-server" />
-        <module name="member-module" />
-        <module name="oauth-security" />
-        <module name="springcloudtest" />
+        <module name="hik-consul" />
         <module name="eureka-integral-module" />
+        <module name="member-module" />
+        <module name="getway-security-module" />
+        <module name="springcloudtest" />
+        <module name="ribbon-module" />
         <module name="commodity-module" />
-        <module name="eureka-ribbon" />
+        <module name="log-module" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,11 +22,13 @@
       <module name="alipay-small" target="1.8" />
       <module name="commodity-module" target="1.8" />
       <module name="eureka-integral-module" target="1.8" />
-      <module name="eureka-ribbon" target="1.8" />
       <module name="eureka-server" target="1.8" />
+      <module name="getway-security-module" target="1.8" />
+      <module name="hik-consul" target="1.8" />
       <module name="integral-module" target="1.8" />
+      <module name="log-module" target="1.8" />
       <module name="member-module" target="1.8" />
-      <module name="oauth-security" target="1.8" />
+      <module name="ribbon-module" target="1.8" />
       <module name="springcloudtest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -35,11 +37,13 @@
       <module name="alipay-small" options="" />
       <module name="commodity-module" options="-parameters" />
       <module name="eureka-integral-module" options="-parameters" />
-      <module name="eureka-ribbon" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="getway-security-module" options="-parameters" />
+      <module name="hik-consul" options="-parameters" />
       <module name="integral-module" options="-parameters" />
+      <module name="log-module" options="-parameters" />
       <module name="member-module" options="-parameters" />
-      <module name="oauth-security" options="-parameters" />
+      <module name="ribbon-module" options="-parameters" />
       <module name="springcloudtest" options="-parameters" />
     </option>
   </component>

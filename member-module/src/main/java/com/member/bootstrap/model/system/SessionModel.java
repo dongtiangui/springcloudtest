@@ -26,4 +26,12 @@ public class SessionModel implements Serializable {
     public void setSession(Session session) {
         this.session = session;
     }
+
+    @Override
+    public String toString() {
+        return "SessionModel{" +
+                "sessionId=" + sessionId +
+                ", session=" + session +
+                '}';
+    }
 }

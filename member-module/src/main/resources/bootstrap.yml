@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: member
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: service-producer  # 注册中心的服务名
+      profile: env  # 指定配置文件的环境
+      fail-fast: true
+# 配置问是由统一配置文件管理中心加载
+# 需要配置文件的 首先是通过bootstrap.yml 远程加载配置文件
