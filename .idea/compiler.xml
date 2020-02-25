@@ -8,11 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hik-consul" />
+        <module name="integral-module" />
         <module name="getway-security-module" />
         <module name="member-module" />
         <module name="ribbon-module" />
         <module name="commodity-module" />
-        <module name="eureka-integral-module" />
         <module name="log-module" />
       </profile>
     </annotationProcessing>
@@ -20,7 +20,6 @@
       <module name="alipay-module" target="1.8" />
       <module name="alipay-small" target="1.8" />
       <module name="commodity-module" target="1.8" />
-      <module name="eureka-integral-module" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="getway-security-module" target="1.8" />
       <module name="hik-consul" target="1.8" />
@@ -35,7 +34,6 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="alipay-small" options="" />
       <module name="commodity-module" options="-parameters" />
-      <module name="eureka-integral-module" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="getway-security-module" options="-parameters" />
       <module name="hik-consul" options="-parameters" />

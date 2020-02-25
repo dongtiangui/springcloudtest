@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/commodity-module/commodity-module.iml" filepath="$PROJECT_DIR$/commodity-module/commodity-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eureka-integral-module/eureka-integral-module.iml" filepath="$PROJECT_DIR$/eureka-integral-module/eureka-integral-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/getway-security-module/getway-security-module.iml" filepath="$PROJECT_DIR$/getway-security-module/getway-security-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/hik-consul/hik-consul.iml" filepath="$PROJECT_DIR$/hik-consul/hik-consul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/integral-module/integral-module.iml" filepath="$PROJECT_DIR$/integral-module/integral-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/log-module/log-module.iml" filepath="$PROJECT_DIR$/log-module/log-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/member-module/member-module.iml" filepath="$PROJECT_DIR$/member-module/member-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-module/ribbon-module.iml" filepath="$PROJECT_DIR$/ribbon-module/ribbon-module.iml" />
