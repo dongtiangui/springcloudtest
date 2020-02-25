@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -12,6 +13,7 @@
 	<artifactId>springcloudtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springcloudtest</name>
+	<packaging>pom</packaging>
 	<description>springcloud测试 project for Spring Boot</description>
 	
 	<properties>
@@ -48,11 +50,11 @@
 	</build>
 	<modules>
 		<module>hik-consul</module>
-		<module>oauth-security</module>
+		<module>getway-security-module</module>
 		<module>eureka-integral-module</module>
 		<module>ribbon-module</module>
-		<module>log-module</module>
 		<module>member-module</module>
+		<module>log-module</module>
 		<module>commodity-module</module>
 	</modules>
 </project>

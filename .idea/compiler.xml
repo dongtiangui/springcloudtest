@@ -8,12 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hik-consul" />
-        <module name="eureka-integral-module" />
-        <module name="member-module" />
         <module name="getway-security-module" />
-        <module name="springcloudtest" />
+        <module name="member-module" />
         <module name="ribbon-module" />
         <module name="commodity-module" />
+        <module name="eureka-integral-module" />
         <module name="log-module" />
       </profile>
     </annotationProcessing>
