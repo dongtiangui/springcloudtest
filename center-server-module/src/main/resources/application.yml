@@ -1,0 +1,38 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8054
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2SESSION
+    context-path: /
+spring:
+  application:
+    name: spring-cloud-consul-producer
+  cloud:
+    consul:
+      port: 8500
+      discovery:
+        service-name: spring-cloud-consul-producer
+        instance-id: ${spring.application.name}:${server.port}
+        enabled: false
+        health-check-path: /actuator/health
+        health-check-headers:
+          Content-Type: application/json;charset=UTF-8
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 520131
+#logging:
+#  config: classpath:logback-spring.xml
+ribbon:
+  restclient:
+    enabled: true
+hystrix:
+  metrics:
+    polling-interval-ms: 60000

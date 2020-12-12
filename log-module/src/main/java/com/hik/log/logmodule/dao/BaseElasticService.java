@@ -48,7 +48,7 @@ public class BaseElasticService {
 //            设置结束
             request.mapping(builder);
             // 索引别名
-            request.alias(new Alias("doc_alias").filter(QueryBuilders.termQuery("user", "kimchy")));
+            request.alias(new Alias("doc_alias").filter(QueryBuilders.termQuery("type", "kimchy")));
 //            异步创建并监听
             restHighLevelClient.indices().createAsync(request, RequestOptions.DEFAULT,
               new ActionListener<CreateIndexResponse>() {

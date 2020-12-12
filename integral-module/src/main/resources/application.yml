@@ -1,22 +1,3 @@
-eureka:
-  instance:
-    hostname: localhost
-    #    心跳时间
-    lease-expiration-duration-in-seconds: 20
-    #     发呆时间
-    lease-renewal-interval-in-seconds: 30
-    #    状态路径
-    status-page-url: https://${eureka.instance.hostname}:${server.port}/info
-    #    健康
-    health-check-url-path: https://${eureka.instance.hostname}:${server.port}/health
-    home-page-url: https://${eureka.instance.hostname}:${server.port}/
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8088/eureka/
-    registry-fetch-interval-seconds: 10
-    #    开启健康检查
-#    healthcheck:
-#      enabled: true
 security:
   oauth2:
     client:
@@ -29,13 +10,12 @@ security:
       use-current-uri: false
     resource:
       user-info-uri: http://localhost:8080/user/me
-
 spring:
   main:
     allow-bean-definition-overriding: true
   datasource:
     username: root
-    password: MyNewPass4!
+    password: 520131D.
 #    type: com.zaxxer.hikari.HikariDataSource
     url: jdbc:mysql://localhost:3306/life_integral?charset=utf8mb4&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -59,7 +39,6 @@ spring:
 #        指定为发布订阅模式
   jms:
     pub-sub-domain: true
-
   application:
     name: integral
   data:

@@ -3,3 +3,9 @@ server:
 spring:
   application:
     name: liferibbon
+feign:
+  hystrix:
+    enabled: true
+ribbon:
+  okhttp:
+    enabled: true

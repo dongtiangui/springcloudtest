@@ -7,11 +7,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hik-consul" />
+        <module name="center-server-module" />
         <module name="integral-module" />
         <module name="getway-security-module" />
+        <module name="common-module" />
         <module name="member-module" />
+        <module name="public_security" />
+        <module name="cas-overlay" />
         <module name="ribbon-module" />
+        <module name="cas-sso" />
+        <module name="zipkin-server-module" />
         <module name="commodity-module" />
         <module name="log-module" />
       </profile>
@@ -19,29 +24,39 @@
     <bytecodeTargetLevel>
       <module name="alipay-module" target="1.8" />
       <module name="alipay-small" target="1.8" />
+      <module name="cas-overlay" target="1.8" />
+      <module name="cas-sso" target="1.8" />
+      <module name="center-server-module" target="1.8" />
       <module name="commodity-module" target="1.8" />
+      <module name="common-module" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="getway-security-module" target="1.8" />
-      <module name="hik-consul" target="1.8" />
       <module name="integral-module" target="1.8" />
       <module name="log-module" target="1.8" />
       <module name="member-module" target="1.8" />
+      <module name="public_security" target="1.8" />
       <module name="ribbon-module" target="1.8" />
+      <module name="sleuth-zipkin-module" target="1.8" />
       <module name="springcloudtest" target="1.8" />
+      <module name="zipkin-server-module" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="alipay-small" options="" />
+      <module name="center-server-module" options="-parameters" />
       <module name="commodity-module" options="-parameters" />
+      <module name="common-module" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="getway-security-module" options="-parameters" />
-      <module name="hik-consul" options="-parameters" />
       <module name="integral-module" options="-parameters" />
       <module name="log-module" options="-parameters" />
       <module name="member-module" options="-parameters" />
+      <module name="public_security" options="-parameters" />
       <module name="ribbon-module" options="-parameters" />
+      <module name="sleuth-zipkin-module" options="-parameters" />
       <module name="springcloudtest" options="-parameters" />
+      <module name="zipkin-server-module" options="-parameters" />
     </option>
   </component>
 </project>

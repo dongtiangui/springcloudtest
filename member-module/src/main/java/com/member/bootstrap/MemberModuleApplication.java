@@ -24,7 +24,7 @@ public class MemberModuleApplication {
 
     @RequestMapping("/index")
     public String index() {
-        return restTemplate().getForEntity("http://oauth2-center/api/index",String.class).getBody();
+        return "Hello world";
     }
 
     public static void main(String[] args) {

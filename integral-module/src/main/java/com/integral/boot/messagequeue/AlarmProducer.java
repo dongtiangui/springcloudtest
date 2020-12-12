@@ -10,10 +10,8 @@ import javax.jms.Destination;
  */
 @Component
 public class AlarmProducer {
-
     @Resource(name = "jmsQueueTemplate")
     private JmsTemplate jmsTemplate;
-
     public void sendMessage(Destination destination, String message){
         this.jmsTemplate.convertAndSend(destination,message);
     }

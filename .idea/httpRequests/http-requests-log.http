@@ -1,0 +1,56 @@
+GET http://127.0.0.1:8089
+
+<> 2020-03-28T112108.200.txt
+
+###
+
+GET http://127.0.0.1:8089
+
+###
+
+POST http://localhost:8081/oauth/token?client_id=123456&grant_type=authorization_code&code=f421c3d1d94562937307ef2099e3bc12&client_secret=123&redirect_uri=http://www.baidu.com
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8081/oauth/token?client_id=123456&grant_type=authorization_code&code=f421c3d1d94562937307ef2099e3bc12&client_secret=123&redirect_uri=http://www.baidu.com
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8081/oauth/token?client_id=123456&grant_type=authorization_code&code=f421c3d1d94562937307ef2099e3bc12&client_secret=123&redirect_uri=http://www.baidu.com
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8081/oauth/token?client_id=123456&grant_type=authorization_code&code=f421c3d1d94562937307ef2099e3bc12&client_secret=123&redirect_uri=http://www.baidu.com
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+POST http://localhost:8081/oauth/token?client_id=123456&response_type=code&redirect_uri=http://localhost:8081/oauth/oauth2login
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:8081/oauth/authorize?client_id=123456&response_type=code&redirect_uri=http://localhost:8081/oauth/oauth2login
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-19T121500.200.html
+
+###
+
+GET http://localhost:8080/resources
+Accept: */*
+Cache-Control: no-cache
+
+<> 2019-11-19T121440.401.html
+
+###
+

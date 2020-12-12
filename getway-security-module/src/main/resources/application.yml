@@ -1,0 +1,62 @@
+zuul:
+  routes:
+    oauth2-center:
+      path: /api-member/**
+      serviceId: member
+    #\u6DFB\u52A0\u9ED8\u8BA4\u524D\u7F00
+  prefix: /api
+    #\u4E0D\u79FB\u9664\u524D\u7F00
+  strip-prefix: true
+  sensitive-headers:
+    #\u89E3\u51B3\u91CD\u5B9A\u5411\u8DF3\u8F6C\u8DEF\u5F84\u95EE\u9898
+  add-host-header: true
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 50000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+server:
+  port: 8087
+  servlet:
+    session:
+      cookie:
+        name: OAUTH2SESSION
+    context-path: /getway
+spring:
+  application:
+    name: getway-center
+  datasource:
+    username: root
+    password: '520131D.'
+    url: jdbc:mysql://localhost:3306/life_admin?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: true
+  cloud:
+    consul:
+      port: 8500
+      discovery:
+        service-name: spring-cloud-getway-center
+        instance-id: ${spring.application.name}:${server.port}
+        enabled: false
+        health-check-path: /getway/actuator/health
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: 520131
+logging:
+  config: classpath:logback-spring.xml
+ribbon:
+  restclient:
+    enabled: true
+hystrix:
+  metrics:
+    polling-interval-ms: 60000

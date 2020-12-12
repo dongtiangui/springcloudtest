@@ -2,13 +2,19 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/center-server-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commodity-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/commodity-module/src/main/resources/tomcat.keystore" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/common-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/getway-security-module" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hik-consul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/integral-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/log-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/member-module" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ribbon-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-server-module" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../前端技术文档/public_security" charset="UTF-8" />
+    <file url="file://$USER_HOME$/git/cas-cas-hik" charset="UTF-8" />
+    <file url="file://$USER_HOME$/git/cas-overlay-template" charset="UTF-8" />
+    <file url="file://$USER_HOME$/git/cas-sso" charset="UTF-8" />
   </component>
 </project>

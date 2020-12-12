@@ -1,5 +1,6 @@
 package com.oauth2.oauthsecurity.domain;
 
+import com.google.common.base.Objects;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -19,5 +20,19 @@ public class CustomErrorType implements Serializable {
     public CustomErrorType(int status, String message) {
         this.status = status;
         this.message = message;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomErrorType that = (CustomErrorType) o;
+        return status == that.status &&
+                Objects.equal(message, that.message);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(status, message);
     }
 }

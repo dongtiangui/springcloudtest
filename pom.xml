@@ -49,12 +49,14 @@
 		</plugins>
 	</build>
 	<modules>
-		<module>hik-consul</module>
+		<module>center-server-module</module>
 		<module>getway-security-module</module>
-		<module>eureka-integral-module</module>
+		<module>integral-module</module>
 		<module>ribbon-module</module>
 		<module>member-module</module>
 		<module>log-module</module>
 		<module>commodity-module</module>
+		<module>common-module</module>
+		<module>zipkin-server-module</module>
 	</modules>
 </project>

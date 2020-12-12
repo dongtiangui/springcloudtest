@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/git/cas-cas-hik/cas-overlay.iml" filepath="$USER_HOME$/git/cas-cas-hik/cas-overlay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/center-server-module/center-server-module.iml" filepath="$PROJECT_DIR$/center-server-module/center-server-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/commodity-module/commodity-module.iml" filepath="$PROJECT_DIR$/commodity-module/commodity-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common-module/common-module.iml" filepath="$PROJECT_DIR$/common-module/common-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/getway-security-module/getway-security-module.iml" filepath="$PROJECT_DIR$/getway-security-module/getway-security-module.iml" />
-      <module fileurl="file://$PROJECT_DIR$/hik-consul/hik-consul.iml" filepath="$PROJECT_DIR$/hik-consul/hik-consul.iml" />
       <module fileurl="file://$PROJECT_DIR$/integral-module/integral-module.iml" filepath="$PROJECT_DIR$/integral-module/integral-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/log-module/log-module.iml" filepath="$PROJECT_DIR$/log-module/log-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/member-module/member-module.iml" filepath="$PROJECT_DIR$/member-module/member-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../前端技术文档/public_security/public_security.iml" filepath="$PROJECT_DIR$/../前端技术文档/public_security/public_security.iml" />
       <module fileurl="file://$PROJECT_DIR$/ribbon-module/ribbon-module.iml" filepath="$PROJECT_DIR$/ribbon-module/ribbon-module.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloudtest.iml" filepath="$PROJECT_DIR$/springcloudtest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin-server-module/zipkin-server-module.iml" filepath="$PROJECT_DIR$/zipkin-server-module/zipkin-server-module.iml" />
     </modules>
   </component>
 </project>

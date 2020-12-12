@@ -1,5 +1,4 @@
 package com.hik.log.logmodule.config;
-
 import org.apache.http.HttpHost;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestClientBuilder;
@@ -8,7 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
 /**
  * es配置
  */
@@ -16,7 +14,6 @@ import org.springframework.context.annotation.Configuration;
 public class EsConfig {
     @Value("${elasticsearch.uris}")
     private String esUrl;
-
     @Bean
     public RestClientBuilder restClientBuilder() {
         return RestClient.builder(makeHttpHost(esUrl));

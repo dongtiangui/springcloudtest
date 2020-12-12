@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file url="file://$USER_HOME$/git/cas-cas-hik/overlays" />
+    <file url="file://$USER_HOME$/git/cas-overlay-template/overlays" />
+    <file url="file://$USER_HOME$/git/cas-sso/overlays" />
+    <file type="web" url="file://$USER_HOME$/git/cas-cas-hik" />
+    <file type="web" url="file://$USER_HOME$/git/cas-overlay-template" />
+    <file type="web" url="file://$USER_HOME$/git/cas-sso" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -16,10 +24,17 @@
         <option value="$PROJECT_DIR$/eureka-integral-module/pom.xml" />
         <option value="$PROJECT_DIR$/hik-consul/pom.xml" />
         <option value="$PROJECT_DIR$/log-module/pom.xml" />
+        <option value="$PROJECT_DIR$/common-module/pom.xml" />
+        <option value="$USER_HOME$/git/cas-overlay-template-5.3/pom.xml" />
+        <option value="$USER_HOME$/git/cas-cas-hik/pom.xml" />
+        <option value="$PROJECT_DIR$/sleuth-zipkin-module/pom.xml" />
+        <option value="$PROJECT_DIR$/center-server-module/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../前端技术文档/public_security/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="com.a.a.a.g.d.f">
